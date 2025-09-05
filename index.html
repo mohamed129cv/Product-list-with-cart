@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+
+<body>
+  <main>
+    <aside class="side-bar">
+      <h2 class="cat-count">Your cart (<span class="count-card" id="countCard"></span>)</h2>
+      <div class="empty">
+        <img src="assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+      </div>
+      <div class="not-empty">
+        <article class="prodcuts-avtive">
+         <!-- cart -->
+        </article>
+        <div class="Total-con">
+          <p class="text">order Total</p>
+          <p id="total-price"></p>
+        </div>
+        <p  class="carbon"><img src="assets/images/icon-carbon-neutral.svg" alt=""> this is a <span> carban-neutral </span>delivery</p>
+        <button class="comfim-btn">confirm order</button>
+      </div>
+    </aside>
+    <section class="prodcts">
+      <h1>Desserts</h1>
+      <article class="all-products">
+       
+      </article>
+
+    </section>
+
+    <section class="order">
+      <article class="order-list">
+        <img src="assets/images/icon-order-confirmed.svg" alt="">
+        <h3>order confrimed</h3>
+        <p class="text">we hope you enjpy Your food! </p>
+        <div class="content">
+          
+        </div>
+        <div class="check">
+          <p class="text">order total</p>
+          <p class="totel-price"></p>
+        </div>
+          <button class="order-btn">start new order</button>
+      </article>
+    </section>
+    
+  </main>
+  <section class="alert-container">
+
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
