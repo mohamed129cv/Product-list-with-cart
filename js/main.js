@@ -62,7 +62,7 @@ layout();
 // get product
 async function getAllProducts() {
     if (products.length == 0) {
-      let api = await fetch(`../assets/data.json`);
+      let api = await fetch(`./assets/data.json`);
       let data = await api.json();
       products = data.map((product) => {
         return {
