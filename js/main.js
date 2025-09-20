@@ -61,9 +61,8 @@ layout();
 
 // get product
 async function getAllProducts() {
-  try {
     if (products.length == 0) {
-      let api = await fetch(`../data.json`);
+      let api = await fetch(`../assets/data.json`);
       let data = await api.json();
       products = data.map((product) => {
         return {
@@ -74,12 +73,7 @@ async function getAllProducts() {
       });
     }
     callAllFun();
-  } catch (error) {
-    products = `
-  <img src='../assets/images/illustration-empty-cart.svg' style='width:90%;'>
-  <p style='color:red; font-size:2rem;'>Error loading products</p>
-  `;
-  }
+  
 }
 getAllProducts();
 
