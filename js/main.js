@@ -130,10 +130,11 @@ function displayMyCat() {
 
 document.addEventListener("click", (event) => {
   // add prodct to asid
-  if (event.target.classList.contains("btn")) {
-    const btn = event.target;
+  if (event.target.closest(".btn")  ) {
+    const btn = event.target.closest('.btn');
+    
     // accsses to card
-    const card = btn.parentElement.parentElement;
+    const card = btn.closest('.card');
     // card index
     const indexProdcut = card.getAttribute("data-index");
     const product = products[indexProdcut];
